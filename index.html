@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    mobile-<input type="button" value="add to cart"onclick="add(30)">
+    laptop-<input type="button" value="add to cart"onclick="add(40)">
+    tablet-<input type="button" value="add to cart"onclick="add(50)">
+    apple-<input type="button" value="add to cart"onclick="add(60)">
+    submit-<input type="button" value="add to cart"onclick="">
+
+
+    <div style="background-color: bisque;width:200px;height:200px;padding-right:50px;float:right"id="cart">
+    total-item-<b id="c">4</b>
+    <ol id="hello"></ol>
+    <div id="hello2"></div>
+    </div>
+    <br><br>
+    <div id="tpt"></div>
+</body>
+<script>
+    var x=0
+    var sum=0
+    let tot = document.getElementById('tpt')
+    document.getElementById("c").innerText=x;
+   function add(val){
+   document.getElementById("hello").innerHTML+="<li>"+val+"</li>";
+   sum += val;
+   tpt.innerHTML = sum
+    x=x+1;
+   document.getElementById("c").innerText=x;
+  }
+ 
+
+</script>
+</html>

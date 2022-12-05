@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="op1"placeholder="number1">
+    <input type="text" name="" id="op2"placeholder="number2">
+    <input type="button" value="+"id="plus" onclick="add()">
+    <input type="button" value="-"id="sub" onclick="sub()">
+    <input type="button" value="*"id="multi" onclick="multi()">
+    <input type="button" value="/"id="divi" onclick="divi()">
+    <div class="total"></div>
+</body>
+<script>
+   
+    function add()
+    {
+    let result
+    let x=parseInt(document.getElementById("op1").value)
+     console.log(x)
+    let y=parseInt(document.getElementById("op2").value)
+     console.log(y)
+       result=x+y;
+       console.log(result)
+    } 
+    function sub() 
+    {
+     let result 
+     let x=parseInt(document.getElementById("op1").value)
+     let y=parseInt(document.getElementById("op2").value)
+     result=x-y
+     console.log(result)
+    }
+    function multi()
+    {
+        let result
+        let x=parseInt(document.getElementById("op1").value)
+        let y=parseInt(document.getElementById("op2").value)
+        result=x*y
+        console.log(result)
+    }
+    function divi()
+    {
+        let result 
+        let x=parseInt(document.getElementById("op1").value)
+        let y=parseInt(document.getElementById("op2").value)
+        result=x/y
+        console.log(result)
+    }
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <script>
+const operator=prompt("enter the operator:")
+const operands=prompt("enter the operand1:")
+const operande=prompt("enter the operand2:")
+let result
+if(operator=="+")
+{
+    result=operands+operande
+    console.log(result)
+}
+else (operator=="-")
+{
+    console.log(operands-operande)
+}
+
+    </script>
+</body>
+</html>
+
+<!-- const operator=prompt("enter the operator()")
+const operands=parseint(prompt("enter the operand1:"))
+const operande=parseint(prompt("enter the operand2:"))
+if(operator=="+")
+{
+    console.log(operands+operande)
+}
+else (operator=="-")
+{
+    console.log(operands-operande)
+} -->
+// program for a simple calculator
+
+// take the operator input
+const operator = prompt('Enter operator ( either +, -, * or / ): ');
+
+// take the operand input
+const number1 = parseFloat(prompt('Enter first number: '));
+const number2 = parseFloat(prompt('Enter second number: '));
+
+let result;
+
+// using if...else if... else
+if (operator == '+') {
+    result = number1 + number2;
+}
+else if (operator == '-') {
+    result = number1 - number2;
+}
+else if (operator == '*') {
+    result = number1 * number2;
+}
+else {
+    result = number1 / number2;
+}
+
+// display the result
+console.log(`${number1} ${operator} ${number2} = ${result}`); -->
